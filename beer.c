@@ -13,7 +13,6 @@ int calc_beer(int bottles, int caps)
 	else {
 		beer = (bottles / 2) + (caps / 4);
 
-
 		remained_bottles = bottles % 2 + beer;
 		remained_caps = caps % 4 + beer;
 
@@ -31,7 +30,7 @@ int main(int argc, void *argv[])
 	int remained_caps;
 
 	if (argc != 2) {
-		printf("wrong paras!");
+		printf("wrong paras!\n");
 
 		return -1;
 	}
@@ -47,7 +46,6 @@ int main(int argc, void *argv[])
 	beer += calc_beer(remained_bottles, remained_caps);
 
 	printf("you have %d yuan to buy %d bottles of beer\n", money, beer);
-	
 
 	return 0;
 }
