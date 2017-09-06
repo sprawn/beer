@@ -32,6 +32,8 @@ int main(int argc, void *argv[])
 
 	if (argc != 2) {
 		printf("wrong paras!");
+
+		return -1;
 	}
 	else {
 		money = atoi((char *)argv[1]);
@@ -47,5 +49,5 @@ int main(int argc, void *argv[])
 	printf("you have %d yuan to buy %d bottles of beer\n", money, beer);
 	
 
-    return 0;
+	return 0;
 }
